@@ -1,0 +1,38 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #00ff00; /* Verde neon */
+}
+
+.clock-container {
+  text-align: center;
+  font-size: 4rem;
+}
+
+#clock {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  display: inline-block;
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.8);
+}
+
+#time {
+  font-size: 6rem;
+}
+
+#date {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
