@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculadora">
+    <input type="text" id="display" disabled>
+   <div class="botoes">
+   <div class="fileiras">
+    <button class="botao" onclick="limpar()">C</button>
+    <button class="botao" onclick="deletar()">Del</button>
+   </div>
+   <div class="fileira fileira-azul">
+    <button class="botao" onclick="adicionarValor(7)">7</button>
+    <button class="botao" onclick="adicionarValor(8)">8</button>
+    <button class="botao" onclick="adicionarValor(9)">9</button>
+    <button class="botao" onclick="adicionarValor('/')">/</button>
+   </div> 
+   <div class="fileira fileira-azul">
+    <button class="botao" onclick="adicionarValor(4)">4</button>
+    <button class="botao" onclick="adicionarValor(5)">5</button>
+    <button class="botao" onclick="adicionarValor(6)">6</button>
+    <button class="botao" onclick="adicionarValor('*')">*</button>
+   </div>
+   <div class="fileira fileira-azul">
+    <button class="botao" onclick="adicionarValor(1)">1</button>
+    <button class="botao" onclick="adicionarValor(2)">2</button>
+    <button class="botao" onclick="adicionarValor(3)">3</button>
+    <button class="botao" onclick="adicionarValor('-')">-</button>
+   </div>
+   <div class="fileira fileira-azul">
+    <button class="botao" onclick="adicionarValor(0)">0</button>
+    <button class="botao" onclick="adicionarValor('.')">.</button>
+    <button class="botao" onclick="calcular()">=</button>
+    <button class="botao" onclick="adicionarValor('+')">+</button>
+   </div>
+   </div> 
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
