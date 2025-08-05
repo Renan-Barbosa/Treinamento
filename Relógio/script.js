@@ -4,9 +4,7 @@ function updateClock() {
 
   const now = new Date();
 
-  let hours = now.getHours();
-  const minutes = now.getMinutes();
-  const seconds = now.getSeconds();
+  
 
   const day = now.getDate();
   const month = now.getMonth() + 1; // Janeiro é 0, então somamos 1
