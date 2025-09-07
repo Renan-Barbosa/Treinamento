@@ -1,6 +1,6 @@
-
 .cartao {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: 400px;
   perspective: 1000px;
   margin: 100px auto;
@@ -21,7 +21,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 50%;
 }
 
 .frente h2 {
@@ -29,9 +28,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 36px;
+  font-size: 2em;
   font-weight: bold;
-  color: #000;
+  color: black;
 }
 
 .dentro {
@@ -48,7 +47,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-   opacity: 50%;
 }
 
 .conteudo {
@@ -57,7 +55,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 .cartao:hover .frente {
@@ -67,3 +65,29 @@
 .cartao:hover .dentro {
   opacity: 1;
 }
+
+/* Regras para telas menores */
+@media (max-width: 768px) {
+  .cartao {
+    height: 300px;
+  }
+  .frente h2 {
+    font-size: 1.5em;
+  }
+  .conteudo {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .cartao {
+    height: 200px;
+  }
+  .frente h2 {
+    font-size: 1.2em;
+  }
+  .conteudo {
+    font-size: 1em;
+  }
+}
+
