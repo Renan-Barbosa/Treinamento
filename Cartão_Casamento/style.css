@@ -1,4 +1,10 @@
-.cartao {
+body{
+  background-image: linear-gradient(to bottom, #fdf5e6, #f5f5dc);
+  background-size:100%, 100%;
+  background-attachment: fixed;
+}
+
+.cartao{
   width: 100%;
   max-width: 600px;
   height: 400px;
@@ -7,7 +13,7 @@
   position: relative;
 }
 
-.frente {
+.frente{
   position: absolute;
   top: 0;
   left: 0;
@@ -17,23 +23,24 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.frente img {
+.frente img{
   width: 100%;
   height: 100%;
+  opacity: 50%;
   object-fit: cover;
 }
 
-.frente h2 {
+.frente h2{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   font-size: 2em;
   font-weight: bold;
   color: black;
 }
 
-.dentro {
+.dentro{
   position: absolute;
   top: 0;
   left: 0;
@@ -43,51 +50,51 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.dentro img {
+.dentro img{
   width: 100%;
   height: 100%;
+  opacity: 50%;
   object-fit: cover;
 }
 
-.conteudo {
+.conteudo{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   text-align: center;
   font-size: 1.5em;
 }
 
-.cartao:hover .frente {
+.cartao:hover .frente{
   opacity: 0;
 }
 
-.cartao:hover .dentro {
+.cartao:hover .dentro{
   opacity: 1;
 }
 
-/* Regras para telas menores */
-@media (max-width: 768px) {
-  .cartao {
+@media(max-width:768px){
+  .cartao{
     height: 300px;
   }
-  .frente h2 {
+  .frente h2{
     font-size: 1.5em;
   }
-  .conteudo {
+  .conteudo{
     font-size: 1.2em;
   }
 }
 
-@media (max-width: 480px) {
-  .cartao {
+@media(max-width:480px){
+  .cartao{
     height: 200px;
   }
-  .frente h2 {
+  .frente h2{
     font-size: 1.2em;
   }
-  .conteudo {
+
+  .conteudo{
     font-size: 1em;
   }
 }
-
